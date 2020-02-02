@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <script>
+ // basic function de modificat continut
+  function functionBasic() {
+    document.getElementById("innerHT").innerHTML = "Script de aratat continut";
+  }
+  
+   /*    Multi-line comment
+    *    Si aici.
+    */
+  </script>
+  </head>
+<body>
+<div> 
+  <p>Aici sunt mai multe chestii</p> 
+    <p id="innerHT"></p>
+  <button type="button"  onclick="functionBasic()">Click Me!</button>
+</div>
+    <p style="display: inline;"> Click pe buton pentru a vedea continut nou deasupra cu functie din script</p>
+<br>
+
+
+<p id="revealMe" style="display:none">Hidden paragraph that will be revelead</p>
+<button type="button" onclick="document.getElementById('revealMe').style.display='block'">Click Me (functie in-line)!</button>
+</body>
+</html>
+

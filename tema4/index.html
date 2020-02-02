@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  .umplutura{
+    padding-top: 500px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 500px;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  table#table_styled {
+    width: 100%;    
+    background-color: green;
+  }
+  p, th {
+    font-family: "Times New Roman", Times, serif;
+      font-style: italic;
+  }
+  div {
+    text-align: justify;
+  }
+  </style>
+  <script>
+  function myFunction() {
+    document.getElementById("innerHT").innerHTML = "Script de aratat continut";
+  }
+  </script>
+</head>
+<body>
+<a href="http://padureanadrian.ro/" target="_blank">Visit my current website in a new page</a>
+<a href="#anchor1">Du-ma la ancora</a>
+<img src="Romanitate.jpeg" alt="un element de romanitate">
+<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fdeltafonts.com%2Fwp-content%2Fuploads%2FUFC-LOGO.png&f=1&nofb=1" alt="UFC_Logo" style="width:255px;height:255px;">
+
+<div style="background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FY-LPERlRHYA%2Fmaxresdefault.jpg&f=1&nofb=1');" class="umplutura">
+  <p>
+  Div cu imagine de fundal
+  </p>
+</div>
+
+<br>
+<table style="width:100%" id="table_styled">
+  <tr>
+    <th>WeightClass</th>
+    <th>Name</th> 
+    <th>Victories</th>
+  </tr>
+  <tr>
+    <td>Heavyweight</td>
+    <td>Stipe Miocic</td>
+    <td>19</td>
+  </tr>
+  <tr>
+    <td>Light heavyweight</td>
+    <td>Jon Jones</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Israel Adesanya</td>
+    <td>Middleweight</td>
+    <td>18</td>
+  </tr>
+</table>
+<br>
+
+<h2>List of lists</h2>
+<ul style="list-style-type:disc;">
+  <li>ArrayList</li>
+  <li>LinkedList</li>
+  <li>Stacks</li>
+</ul>
+
+<h2>Other object containers </h2>
+
+<ol type="A">
+  <li>Sets</li>
+  <li>Maps</li>
+  <li>Enums</li>
+</ol>  
+
+<div> 
+  <p>Aici sunt mai multe chestii</p> 
+  <p id="innerHT"></p>
+  <button type="button"  onclick="myFunction()">Click Me!</button>
+</div>
+<p style="display: inline;"> Click pe buton pentru a vedea continut nou deasupra</p>
+<br>
+
+
+<p id="revealMe" style="display:none">Hidden paragraph that will be revelead</p>
+<button type="button" onclick="document.getElementById('revealMe').style.display='block'">Click Me!</button>
+
+
+
+
+<h2 id="anchor1">Continut cu ancora</h2>
+</body>
+</html>
