@@ -1,0 +1,163 @@
+<!--CSS-->
+<!--Urmatoarele 5 capitole:-->
+<!---CSS Icons-->
+<!---CSS Links-->
+<!---CSS Lists-->
+<!---CSS Tables-->
+<!---CSS Layout - The display Property-->
+
+
+<!--Aici nu cred ca sunt lucruri la care sa intervin eu. Daca Aveti intrebari va rog sa le puneti in clasa.-->
+
+<!--Tema:-->
+<!--Va rog sa faceti o pagina html in xampp, htdocs in directorul "tema5" un fisier html: tema5css.html"-->
+<!--In acest fisier va rog sa aplicati ce ati invatat in capitolele din acest curs. Sa folositi doar un fisier extern custom css, fara inline si embedded.-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<style>
+    a:link {
+  background-color: #f44336;
+  color: white;
+  border-radius: 15px;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.lista1{
+  list-style-type: none;
+}
+.wide{
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.wide li{
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+}
+//pt ca sa nu se puna border la ultimul
+.wide li:last-child{
+    border-bottom: none
+}
+table, td, th {
+  border: 1px solid black;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+ font-size: 20px;
+}
+
+li {
+  display: inline;
+}
+.in_line{
+     display: inline;
+}
+</style>
+<body>
+    
+<h1>Icons de la Bootstrap</h1>
+<i class="glyphicon glyphicon-cloud"></i>
+<i class="glyphicon glyphicon-remove"></i>
+<i class="glyphicon glyphicon-user"></i>
+<i class="glyphicon glyphicon-envelope"></i>
+<i class="glyphicon glyphicon-thumbs-up"></i>    
+   
+<h1>Icons de la Fontawesome</h1>
+<i class="fas fa-cloud"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-car"></i>
+<i class="fas fa-file"></i>
+<i class="fas fa-bars"></i>
+
+<h1>Icons de la Google</h1>
+<i class="material-icons">cloud</i>
+<i class="material-icons">favorite</i>
+<i class="material-icons">attachment</i>
+<i class="material-icons">computer</i>
+<i class="material-icons">traffic</i>
+
+
+<h1> Eu folosesc foarte des icons de CRUD: </h1>
+<a class="btn btn-danger btn-lg" href="#">
+  <i class="fa fa-trash"></i>Delete</a>
+<a class="btn btn-default btn-lg" href="#">
+  <i class="fa fa-cog"></i>Settings</a>
+<a class="btn btn-lg btn-success" href="#">
+  <i class="fa fa-flag">
+  </i>Save
+</a>
+<h1> Link ca si butoane!</h1>
+<a href="/" target="_blank">GO TO ROOT!</a>
+
+
+<h1>Stilizare de liste</h1>
+<ul class="lista1">
+  <li>item1</li>
+  <li>item2</li>
+  <li>item3</li>
+</ul>
+
+<h1>Stilizare de liste 2</h1>
+<ul class="wide">
+  <li>item1</li>
+  <li>item2</li>
+  <li>item3</li>
+</ul>
+
+
+<h1>Stilizare de tabele</h1>
+<p>Tabel cu </p>
+
+<table>
+  <tr>
+  <th>Item</th>
+  <th>Price</th>
+  <th>Stock</th>
+  </tr>
+  <tr>
+  <td>Apple Juice</td>
+  <td>1.45$</td>
+  <td>32</td>
+  </tr>
+  <tr>
+  <td>Bread</td>
+  <td>2.55$</td>
+  <td>120</td>
+  </tr>
+  <tr>
+  <td>Avocado</td>
+  <td>4$</td>
+  <td>100</td>
+  </tr>
+</table>
+
+<h1>Lista facuta orizontal</h1>
+<p>Display a list of links as a horizontal menu:</p>
+
+<ul>
+  <li><a href="/" target="_blank">ROOT1</a></li>
+  <li><a href="/" target="_blank">ROOT2</a></li>
+  <li><a href="/" target="_blank">ROOT3</a></li>
+</ul>
+
+<span> PRE </span><div class="in_line"><span>Text In-line in div</span></div><span> POST </span>
+</body>
+</html>

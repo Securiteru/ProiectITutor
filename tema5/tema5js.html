@@ -1,0 +1,88 @@
+<!--JavaScript-->
+<!--Continuati cu urmatoarele 5 capitole:-->
+<!---JavaScript Variables-->
+<!--O variabila in javascript se instantiaza intotdeauna cu var si are scop global, adica se poate folosi oriunde. -->
+<!--var x= 2;-->
+<!---JavaScript Operators-->
+<!---JavaScript Arithmetic-->
+<!---JavaScript Assignment-->
+<!---JavaScript Data Types-->
+<!---JavaScript Functions-->
+<!--O functie se declara cu numele "function" urmat de nume functie.-->
+<!--function test() {}-->
+
+<!--Cand se apeleaza, se apeleaza doar cu numele: test();-->
+<!--Tema-->
+<!--Va rog sa faceti o pagina html in xampp, htdocs in directorul "tema5" un fisier html: tema5js.html"-->
+<!--In acest fisier va rog sa aplicati ce ati invatat in capitolele din acest curs, mai ales vreau sa vad ca aveti intr-un fisier custom.js o functie definita si folosita.-->
+<!--Comiteti codul in git asa cum am invatat.-->
+<!--Exemplu de functie:-->
+<!--// Definire functie-->
+<!--function test(){-->
+<!--    alert('test');-->
+<!--}-->
+<!--//Apelare functie-->
+<!--test();-->
+
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <h1> Javascript Arithmetic</h1>
+    <p>Rezultatul 1: Z=X+Y: </p>
+    <span id="rez1"></span>
+    <p>Rezultatul 2: Z post-increment: </p>
+    <span id="rez2"></span>
+    <p>Rezultatul 3: Z pre-increment: </p>
+    <span id="rez3"></span>
+    <p>Rezultatul 4: Z final: </p>
+    <span id="rez4"></span>
+    <p>Rezultatul 5: Z ^ 5: </p>
+    <span id="rez5"></span>
+    <p>Rezultatul 6: Adding attempt Int+String(5 + "TestString"): </p>
+    <span id="rez6"></span>
+    <p>Rezultatul 7: Variable scope - inside function </p>
+    <span id="rez7"></span>
+    <p>Rezultatul 8: Variable scope - outside function </p>
+    <span id="rez8"></span>
+    <p>Rezultatul 9: Variabile returnate </p>
+    <span id="rez9"></span>
+<script>
+var x = 5;
+var y = 2;
+var z = x + y;
+console.log(z++);
+document.getElementById("rez1").innerHTML = z;
+console.log(z++);
+document.getElementById("rez2").innerHTML = z;
+console.log(++z);
+document.getElementById("rez3").innerHTML = z;
+console.log(z);
+document.getElementById("rez4").innerHTML = z;
+z = z ** 5;  
+document.getElementById("rez5").innerHTML = z;
+
+var integer = 5;                               
+var stringy = "TestString";                      
+ 
+document.getElementById("rez6").innerHTML = integer+stringy;
+
+function testFunction(){
+    var x=150;
+    document.getElementById("rez7").innerHTML = x;
+    console.log(x);
+}
+testFunction();
+console.log(x);
+document.getElementById("rez8").innerHTML = x;
+
+function testFunctionReturn(){
+    var x=150;
+    return x;
+}
+x=testFunctionReturn();
+document.getElementById("rez9").innerHTML = x;
+</script>
+</body>
+</html>
